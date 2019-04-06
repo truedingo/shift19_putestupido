@@ -23,13 +23,23 @@
             android:background="@drawable/border_background"
             android:layout_weight="1">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:rotation="180"
+                app:srcCompat="@drawable/redarrow" />
+
             <TextView
                 android:id="@+id/textGrid"
                 android:layout_width="wrap_content"
+                android:textAllCaps="true"
                 android:layout_height="match_parent"
                 android:layout_centerInParent="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="14dp"
+                android:layout_centerVertical="true"
                 android:layout_marginEnd= "14dp"
                 android:layout_marginBottom="14dp"
                 android:fontFamily="sans-serif"
@@ -38,6 +48,8 @@
                 android:textColor="#ef4e4e"
                 android:textSize="34sp"
                 android:typeface="sans" />
+
+
 
         </RelativeLayout>
 
@@ -77,15 +89,16 @@
                     <TextView
                         android:layout_width="188dp"
                         android:layout_height="match_parent"
-                        android:layout_gravity="left"
+                        android:layout_gravity="start|center_vertical"
                         android:gravity="left"
                         android:text="Contactos de Emergência"
+                        android:textAllCaps="true"
                         android:textColor="#ef4e4e"
-                        android:textSize="30sp"
+                        android:textSize="25sp"
                         android:textStyle="normal" />
 
                     <ImageView
-                        android:layout_width="132dp"
+                        android:layout_width="129dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/emergency" />
@@ -122,6 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Saúde"
+                        android:textAllCaps="true"
                         android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="30sp"
@@ -161,6 +175,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Me"
+                        android:textAllCaps="true"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
