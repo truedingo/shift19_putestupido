@@ -22,6 +22,7 @@
         <activity android:name=".EmergencyActivity" />
         <activity android:name=".RemindersActivity" />
         <activity android:name=".KeysActivity" />
+        <activity android:name=".MedicalChartActivity" />
     </application>
 
 </manifest>

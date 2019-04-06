@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ef4e4e"
+    android:padding="15dp"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context="edmt.dev.androidgridlayout.HealthActivity">
@@ -30,7 +31,7 @@
 
             <TextView
                 android:id="@+id/textGrid"
-                android:layout_width="258dp"
+                android:layout_width="235dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentStart="false"
                 android:layout_centerVertical="true"
@@ -88,7 +89,7 @@
                         android:gravity="center"
                         android:text="Número de Emergencia"
                         android:textColor="#ef4e4e"
-                        android:textSize="26sp"
+                        android:textSize="24sp"
                         android:textStyle="normal" />
 
                     <TextView
@@ -137,7 +138,7 @@
                         android:textAllCaps="true"
                         android:text="Saúde 24"
                         android:textColor="#ef4e4e"
-                        android:textSize="27sp"
+                        android:textSize="24sp"
                         android:textStyle="normal" />
 
                     <TextView
@@ -185,7 +186,7 @@
                         android:text="Linha Cancro"
                         android:textAllCaps="true"
                         android:textColor="#ef4e4e"
-                        android:textSize="27sp"
+                        android:textSize="24sp"
                         android:textStyle="normal" />
 
                     <TextView
@@ -233,7 +234,7 @@
                         android:textAllCaps="true"
                         android:text="Médico"
                         android:textColor="#ef4e4e"
-                        android:textSize="27sp"
+                        android:textSize="24sp"
                         android:textStyle="normal" />
 
                     <TextView

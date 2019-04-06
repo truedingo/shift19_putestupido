@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+
+    android:background="#ef4e4e"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="edmt.dev.androidgridlayout.HealthActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/border_background"
+        android:layout_weight="1.2">
+
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="bottom|center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:text="Ficha Médica"
+            android:textAllCaps="true"
+            android:textColor="#ef4e4e"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.7"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="2dp"
+        android:rowCount="3">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="8dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="621dp"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:background="@drawable/border_background_table"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:text="Nome"
+                        android:textAllCaps="true"
+                        android:textColor="#ef4e4e"
+                        android:textSize="25sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:text="Miguel José"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="true"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/border_background_table"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/AgeTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Idade"
+                        android:textAllCaps="true"
+                        android:textColor="#ef4e4e"
+                        android:textSize="25sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:text="65"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/border_background_table"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/BloodTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Sangue"
+                        android:textAllCaps="true"
+                        android:textColor="#ef4e4e"
+                        android:textSize="25sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:text="O -"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:textStyle="normal" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="128dp"
+                    android:background="@drawable/border_background_table"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/UtenteTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="71dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="Cartão de \n Utente"
+                        android:textAllCaps="true"
+                        android:textColor="#ef4e4e"
+                        android:textSize="22sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="033213452"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+                </TableRow>
+
+
+                <TextView
+                    android:id="@+id/DoençasTag"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_background_table"
+                    android:padding="7dp"
+                    android:text="Doenças Crónicas"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#ef4e4e"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+
+
+                <TableRow
+                    android:background="@drawable/border_background_table"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:id="@+id/NameTag"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:text="Diabetes"
+                        android:layout_gravity="left|center_vertical"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#3D3939"
+                        android:textSize="20sp" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="20dp"
+                        android:contentDescription="goBack"
+                        app:srcCompat="@drawable/checkred" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@drawable/border_background_table"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:id="@+id/Hipertensão"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="Hipertensão"
+                        android:layout_marginStart="10dp"
+                        android:textAllCaps="true"
+                        android:textColor="#3D3939"
+                        android:textSize="20sp" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="20dp"
+                        android:contentDescription="goBack" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@drawable/border_background_table"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:id="@+id/DoeçasOncologicas"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="Artrose"
+                        android:textAllCaps="true"
+                        android:textColor="#3D3939"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="20dp"
+                        android:contentDescription="goBack"
+                        app:srcCompat="@drawable/checkred" />
+
+
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/AlergiesTag"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_background_table"
+                    android:padding="7dp"
+                    android:text="Alergias"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#ef4e4e"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+
+
+                <TableRow
+                    android:layout_height="55dp"
+                    android:background="@drawable/border_background_table"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:id="@+id/Amendoins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="Penicilina"
+                        android:layout_marginStart="10dp"
+                        android:textAllCaps="true"
+                        android:textColor="#3D3939"
+                        android:textSize="20sp" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="20dp"
+                        android:contentDescription="goBack"
+                        app:srcCompat="@drawable/checkred" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 2 -->
+
+        <!-- Column 1 -->
+        <!-- Column 1 -->
+        <!-- Column 2 -->
+        <!-- Column 1 -->
+
+
+        <!-- Row 2 -->
+
+        <!-- Column 1 -->
+        <!-- Column 1 -->
+
+        <!-- Column 2 -->
+        <!-- Column 1 -->
+
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>

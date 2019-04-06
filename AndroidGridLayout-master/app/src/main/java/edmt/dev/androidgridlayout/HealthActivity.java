@@ -62,8 +62,11 @@ public class HealthActivity extends AppCompatActivity {
 
                     switch(finalI){
                         case 0:
+                            intent = new Intent(HealthActivity.this,MedicalChartActivity.class);
+                            startActivity(intent);
+                            break;
+                        case 1:
                             intent = new Intent(HealthActivity.this,EmergencyActivity.class);
-                            Log.w("hey","hey");
                             startActivity(intent);
                             break;
                         default:
