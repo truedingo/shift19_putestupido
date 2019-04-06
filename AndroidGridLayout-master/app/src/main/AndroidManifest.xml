@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".ActivityOne" />
         <activity android:name=".HealthActivity" />
+        <activity android:name=".EmergencyActivity" />
     </application>
 
 </manifest>

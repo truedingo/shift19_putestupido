@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.Toast;
@@ -61,8 +62,8 @@ public class HealthActivity extends AppCompatActivity {
 
                     switch(finalI){
                         case 0:
-                            intent = new Intent(HealthActivity.this,ActivityOne.class);
-                            intent.putExtra("info","This is activity from card item index boitch "+finalI);
+                            intent = new Intent(HealthActivity.this,EmergencyActivity.class);
+                            Log.w("hey","hey");
                             startActivity(intent);
                             break;
                         default:
